@@ -15,7 +15,7 @@ class test_Version(TestCase):
 
     def test_path_version_file(self):
         with self.version as _:
-            assert parent_folder(_.path_version_file()) == version__sgraph_ai
+            assert parent_folder(_.path_version_file()) == sgraph_ai.path
             assert file_name    (_.path_version_file()) == 'version'
 
     def test_value(self):
